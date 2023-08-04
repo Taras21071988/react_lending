@@ -1,5 +1,8 @@
 This application was created as a pet project
 
+obtaining data for authorization, storage and recording of data occurs through a pet project created earlier
+
+https://github.com/Taras21071988/nest_js_base
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
