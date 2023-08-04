@@ -9,18 +9,17 @@ import { instance } from '../../utils/axios'
 
 
 const RouteAuth = () => {
-  const [login, setLogin] = useState('')
-  const [password, setPassword] = useState('')
-  const location = useLocation()
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const location = useLocation();
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     const userData = {
-      id: Date.now(),
-      login,
+      email,
       password
     }
-    const user = await instance.post('user', userData)
+    const user = await instance.post('/auth/login', userData)
     console.log(user.data)
   }
 
@@ -41,7 +40,7 @@ const RouteAuth = () => {
             borderRadius={5}
             boxShadow={'5px 5px 10px rgba(157, 213, 88, 0.75)'}
           >
-            {location.pathname === '/Login' ? <Login setLogin={setLogin} setPassword={setPassword} /> : location.pathname === '/Register' ? <Register /> : null}
+            {location.pathname === '/Login' ? <Login setEmail={setEmail} setPassword={setPassword} /> : location.pathname === '/Register' ? <Register /> : null}
           </Box>
         </form>
       </div>

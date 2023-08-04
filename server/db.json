@@ -1,5 +1,7 @@
 {
-  "user": [],
+  "user": [
+
+  ],
   "sertificates": [
     {
       "id": 1,
@@ -62,14 +64,7 @@
       "price": 5000
     }
   ],
-  "added": [
-    {
-      "title": "Сертификат на продцедуры",
-      "subtitle": "Стоимость: ",
-      "price": 300,
-      "id": 2
-    }
-  ],
+  "added": [],
   "checkout": [
     {
       "key": 700,
